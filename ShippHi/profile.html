@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Profile</h2>
+    <div class="profile-info">
+      <p><span>Name:</span> <span id="name"></span></p>
+      <p><span>Last Name:</span> <span id="lastName"></span></p>
+      <p><span>Address:</span> <span id="address"></span></p>
+      <p><span>Phone:</span> <span id="phone"></span></p>
+      <p><span>Email:</span> <span id="email"></span></p>
+    </div>
+    <button class="edit-btn">Edit</button>
+  </div>
+
+  <div class="menu">
+    <div>
+      <div class="icon">🛒</div>
+      <div>basket</div>
+    </div>
+    <div>
+      <div class="icon">💵</div>
+      <div>payment</div>
+    </div>
+    <div>
+      <div class="icon">⭐</div>
+      <div>review</div>
+    </div>
+  </div>
+
+  <script>
+    fetch("backend/profile.php")
+      .then(res => res.json())
+      .then(data => {
+        if (data.error) {
+          alert(data.error);
+          return;
+        }
+        document.getElementById("name").textContent = data.name;
+        document.getElementById("lastName").textContent = data.lastname;
+        document.getElementById("address").textContent = data.address;
+        document.getElementById("phone").textContent = data.phone;
+        document.getElementById("email").textContent = data.email;
+      })
+      .catch(err => console.error("Fetch error:", err));
+  </script>
+</body>
+</html>

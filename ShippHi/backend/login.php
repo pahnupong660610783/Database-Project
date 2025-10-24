@@ -21,7 +21,7 @@ if ($result->num_rows === 1) {
         session_start();
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['name'] = $user['name'];
-        header("Location: ../product.html");
+        header("Location: ../profile.html");
         exit;
     } else {
         echo "<script>alert('Invalid email or password'); window.location.href='../login.html';</script>";
