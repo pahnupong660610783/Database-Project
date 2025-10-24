@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="logo-section">
+      <img src="image/logo.png" alt="logo" class="logo" />
+      <h1>SHIPP HI</h1>
+    </div>
+
+    <div class="form-section">
+      <h2>Log in</h2>
+      <form action="backend/login.php" method="POST">
+        <label>Email</label>
+        <input type="email" name="email" required />
+
+        <label>Password</label>
+        <input type="password" name="password" required />
+
+        <div class="buttons">
+          <button type="button" onclick="window.location.href='home.html'" class="cancel">Cancel</button>
+          <button type="submit" class="ok">OK</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

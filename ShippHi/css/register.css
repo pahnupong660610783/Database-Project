@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ff6f75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  color: white;
+}
+
+.left {
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.right {
+  background-color: #f8f8f8;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  color: #333;
+  width: 320px;
+}
+
+.right h2 {
+  text-align: center;
+  color: #ff4f57;
+  margin-bottom: 20px;
+}
+
+.register-form label {
+  display: block;
+  font-size: 0.9em;
+  margin: 8px 0 3px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 35px;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.cancel {
+  background-color: #ff4f57;
+  color: white;
+}
+
+.ok {
+  background-color: white;
+  color: #ff4f57;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}

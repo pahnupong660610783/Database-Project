@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f87272;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background: #f87272;
+  padding: 50px 80px;
+  border-radius: 15px;
+}
+
+.logo-section {
+  text-align: center;
+  color: white;
+  margin-right: 60px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.form-section {
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  padding: 40px 50px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  margin: 8px 0 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.cancel {
+  background-color: #f44336;
+  color: white;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.ok {
+  background-color: white;
+  color: #f44336;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.ok:hover {
+  background-color: #f44336;
+  color: white;
+}
