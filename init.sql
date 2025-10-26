@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS saler (
     phoneNum VARCHAR(15) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS orderHeader (
+CREATE TABLE IF NOT EXISTS order_header (
     id INT AUTO_INCREMENT PRIMARY KEY,
     userId INT,
     salerId INT,
@@ -46,11 +46,11 @@ CREATE TABLE IF NOT EXISTS product (
     FOREIGN KEY (categoryId) REFERENCES category(id)
 );
 
-CREATE TABLE IF NOT EXISTS orderDetail (
+CREATE TABLE IF NOT EXISTS order_detail (
     orderId INT ,
     productId INT,
     quantity INT NOT NULL,
-    FOREIGN KEY (orderId) REFERENCES orderHeader(id),
+    FOREIGN KEY (orderId) REFERENCES order_header(id),
     FOREIGN KEY (productId) REFERENCES product(id)
 );
 
@@ -62,5 +62,5 @@ CREATE TABLE IF NOT EXISTS review(
     review_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     description VARCHAR(100),
     FOREIGN KEY (userId) REFERENCES users(id),
-    FOREIGN KEY (productId) REFERENCES product(id),
+    FOREIGN KEY (productId) REFERENCES product(id)
 );

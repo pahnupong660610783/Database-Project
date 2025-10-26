@@ -20,9 +20,16 @@ body {
   text-align: center;
 }
 
-.logo {
-  width: 120px;
+.logo img{
+  width: 200px;
+  height: auto;
   margin-bottom: 20px;
+}
+
+.slogan img{
+  width: 20px;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 .right {
